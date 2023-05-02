@@ -6,4 +6,4 @@ Analisis de los desastres del país ,Implementacion de modelos predicción
 ## Integrantes
 
 - Jhon velasque
-- juan araoz
+- juan araoz (test)
