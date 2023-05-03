@@ -7,4 +7,4 @@ Analisis de los desastres del país ,Implementacion de modelos predicción
 
 - Jhon velasque
 - juan araoz (test)
-- Juan Pablo Idrovo (miau)
+- Juan Pablo Idrovo - MIAU (test)
