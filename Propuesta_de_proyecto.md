@@ -1,12 +1,13 @@
 
 
-<p align=center><img src='img/Logos/bannernew.png' width=1600 height=550><p>
+<p align=center><img src='img/Logos/bannernew.png' width=2000 height=600><p>
 
-<h1  align=center>Propuesta de Proyecto</h1><hr>
+<h1 align=center>Propuesta de Proyecto</h1>
+<h1 align=center>Sistema de Alertas Sismicas</h1>
 
 <h2>Entendimiento de la situacion actual</h2>
 
-<p>Los eventos naturales impredecibles como los sismos se cobran la vidad de cientos de personas cuando suceden, incluso pueden ocasionar otros eventos como tsunamis, activacion de volcanes, peligros nucleares, despues que suceden no se conoce como esta la estructura de las edificaciones.
+<p>Los eventos naturales impredecibles como los sismos se cobran la vidad de cientos de personas cuando suceden, incluso pueden ocasionar otros eventos secundarios como tsunamis, activacion de volcanes, peligros nucleares y despues que suceden no se conoce como esta la estructura de las edificaciones.
 Las alertas actuales con numeros o colores no brindan mucha informacion acerca de eventos secundarios o la destructividad de un sismo.
 Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de una region, sobre la posibilidad de eventos naturales su destructividad y sus consecuencias.</p>
 
@@ -23,9 +24,8 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 
 <h2>Alcance</h2>
 
-<p>El alcance del proyecto sera para los paises: Chile, Estados Unidos y Japon. Se usaran datos de sus respectivos observatorios. No se descarta el uso de datos externos o de otros paises para mejorar el modelo.</p>
+<p>El alcance del proyecto sera para los paises: Chile, Estados Unidos y Japon. Se usaran datos de sus respectivos observatorios. No se descarta el uso de datos externos o de otros paises para mejorar el modelo. El modelo sera de clasificacion.</p>
 
-<p align=center><img src='img/Logos/alcance.jpeg' width=500></p>
 
 <h2>KPIs</h2>
 
@@ -67,6 +67,8 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 <p><a href="https://www.linkedin.com/in/esteban-roca-carbajal-5b3957135/"><img alt="Esteban" title="Conectar con Esteban" src="https://img.shields.io/badge/Esteban Roca Carbajal-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> Data Science</p>
 
 <p><a href="https://www.linkedin.com/in/juanm-araoz4168/"><img alt="juan" title="Conectar con Juan" src="https://img.shields.io/badge/Juan Manuel Araoz-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> Data Science</p>
+
+<p>Se usara el sistema de responsonbles por area y de asistentes en caso de necesitar ayuda.</p>
 
 <h2>Stack Tecnologico</h2>
 
@@ -125,3 +127,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 </p>
 
 <p align=center><img src='img/Logos/chiledataAnalisis.png' width=500 height=350></p>
+
+<p>Mapa de paises involucrados.</p>
+
+<p align=center><img src='img/Logos/alcance.jpeg' width=500></p>
