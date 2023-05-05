@@ -1,13 +1,13 @@
 
- 
 
-<p align=center><img src=img/Logos/BannerAlertasSismicas.jpg width=2000 height=400><p>
+<p align=center><img src='img/Logos/bannernew.png' width=2000 height=600><p>
 
-<h1  align=center>Propuesta de Proyecto</h1><hr>
+<h1 align=center>Propuesta de Proyecto</h1>
+<h1 align=center>Sistema de Alertas Sismicas</h1>
 
 <h2>Entendimiento de la situacion actual</h2>
 
-<p>Los eventos naturales impredecibles como los sismos se cobran la vidad de cientos de personas cuando suceden, incluso pueden ocasionar otros eventos como tsunamis, activacion de volcanes, peligros nucleares, despues que suceden no se conoce como esta la estructura de las edificaciones.
+<p>Los eventos naturales impredecibles como los sismos se cobran la vidad de cientos de personas cuando suceden, incluso pueden ocasionar otros eventos secundarios como tsunamis, activacion de volcanes, peligros nucleares y despues que suceden no se conoce como esta la estructura de las edificaciones.
 Las alertas actuales con numeros o colores no brindan mucha informacion acerca de eventos secundarios o la destructividad de un sismo.
 Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de una region, sobre la posibilidad de eventos naturales su destructividad y sus consecuencias.</p>
 
@@ -24,9 +24,8 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 
 <h2>Alcance</h2>
 
-<p>El alcance del proyecto sera para los paises: Chile, Estados Unidos y Japon. Se usaran datos de sus respectivos observatorios. No se descarta el uso de datos externos o de otros paises para mejorar el modelo.</p>
+<p>El alcance del proyecto sera para los paises: Chile, Estados Unidos y Japon. Se usaran datos de sus respectivos observatorios. No se descarta el uso de datos externos o de otros paises para mejorar el modelo. El modelo sera de clasificacion.</p>
 
-<p align=center><img src='img/Logos/alcance.jpeg' width=500></p>
 
 <h2>KPIs</h2>
 
@@ -69,6 +68,8 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 
 <p><a href="https://www.linkedin.com/in/juanm-araoz4168/"><img alt="juan" title="Conectar con Juan" src="https://img.shields.io/badge/Juan Manuel Araoz-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> Data Science</p>
 
+<p>Se usara el sistema de responsonbles por area y de asistentes en caso de necesitar ayuda.</p>
+
 <h2>Stack Tecnologico</h2>
 
 <h3>Planificacion y Colaboracion</h3>
@@ -110,3 +111,23 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 
 <p><img src='img/Logos/renderLogo.png' width=60 height=20> &nbsp Render</p>
 
+<h2>Calidad de datos</h2>
+
+<p>Los datos se extraeran de las siguientes fuentes:</br>
+
+<li>Estados unidos: &nbsp <a href='https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2012-01-01%2000:00:00&endtime=2022-12-31%2023:59:59&maxlatitude=50&minlatitude=24.6&maxlongitude=-65&minlongitude=-125&minmagnitude=3&orderby=time-asc'>earthquake.usgs.gov/usa </a></p>
+
+<p align=center><img src='img/Logos/usadataAnalisis.png' width=500 height=350></p>
+
+<p><li>Japon: &nbsp <a href='https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2012-01-01%2000:00:00&endtime=2022-12-31%2023:59:59&minlatitude=27.000000&maxlatitude=44.000000&minlongitude=132.780000&maxlongitude=145.530000&&minmagnitude=3&orderby=time-asc'>earthquake.usgs.gov/japan </a></p>
+
+<p align=center><img src='img/Logos/japondataAnalisis.png' width=500 height=350></p>
+
+<p><li>Chile: &nbsp <a href='https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2012-01-01%2000:00:00&endtime=2022-12-31%2023:59:59&minlatitude=-56.800000&maxlatitude=-19.000000&minlongitude=-79.000000&maxlongitude=-69.900000&jsonerror=true'>earthquake.usgs.gov/chile </a>
+</p>
+
+<p align=center><img src='img/Logos/chiledataAnalisis.png' width=500 height=350></p>
+
+<p>Mapa de paises involucrados.</p>
+
+<p align=center><img src='img/Logos/alcance.jpeg' width=500></p>
