@@ -1,7 +1,6 @@
 
- 
 
-<p align=center><img src=img/Logos/BannerAlertasSismicas.jpg width=2000 height=400><p>
+<p align=center><img src='img/Logos/bannernew.png' width=1600 height=550><p>
 
 <h1  align=center>Propuesta de Proyecto</h1><hr>
 
@@ -110,3 +109,19 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 
 <p><img src='img/Logos/renderLogo.png' width=60 height=20> &nbsp Render</p>
 
+<h2>Calidad de datos</h2>
+
+<p>Los datos se extraeran de las siguientes fuentes:</br>
+
+<li>Estados unidos: &nbsp <a href='https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2012-01-01%2000:00:00&endtime=2022-12-31%2023:59:59&maxlatitude=50&minlatitude=24.6&maxlongitude=-65&minlongitude=-125&minmagnitude=3&orderby=time-asc'>earthquake.usgs.gov/usa </a></p>
+
+<p align=center><img src='img/Logos/usadataAnalisis.png' width=500 height=350></p>
+
+<p><li>Japon: &nbsp <a href='https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2012-01-01%2000:00:00&endtime=2022-12-31%2023:59:59&minlatitude=27.000000&maxlatitude=44.000000&minlongitude=132.780000&maxlongitude=145.530000&&minmagnitude=3&orderby=time-asc'>earthquake.usgs.gov/japan </a></p>
+
+<p align=center><img src='img/Logos/japondataAnalisis.png' width=500 height=350></p>
+
+<p><li>Chile: &nbsp <a href='https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2012-01-01%2000:00:00&endtime=2022-12-31%2023:59:59&minlatitude=-56.800000&maxlatitude=-19.000000&minlongitude=-79.000000&maxlongitude=-69.900000&jsonerror=true'>earthquake.usgs.gov/chile </a>
+</p>
+
+<p align=center><img src='img/Logos/chiledataAnalisis.png' width=500 height=350></p>
