@@ -1,7 +1,5 @@
-# SISTEMA_DE_ALERTAS_SISMICA
-
-Analisis de los desastres del país ,Implementacion de modelos predicción
---------------------------------------------------------------------------
+<p align=center><img src='img/Logos/bannernew.png' width=2000 height=600><p>
+<h1 align=center>SISTEMA_DE_ALERTAS_SISMICA</h1>
 
 ## Integrantes
 
