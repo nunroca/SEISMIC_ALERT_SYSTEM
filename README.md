@@ -20,6 +20,8 @@
 
 <h2>Entendimiento de la situación actual</h2>
 
+<p align=center><img src='img/Logos/ciudadAI.png' width=500></p>
+
 <p>Los eventos naturales impredecibles como los sismos se cobran la vidad de cientos de personas cuando suceden, incluso pueden ocasionar otros eventos secundarios como tsunamis, activación de volcanes, peligros nucleares y después que suceden no se conoce como están las estructuras de las edificaciones.
 Las alertas actuales con números o colores no brindan mucha información acerca de eventos secundarios o la destructividad de un sismo.
 Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de una región, sobre la posibilidad de eventos naturales su destructividad y sus consecuencias.</p>
