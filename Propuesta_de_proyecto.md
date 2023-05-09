@@ -1,6 +1,4 @@
-
-
-<p align=center><img src='img/Logos/bannernew.png' width=2000 height=600><p>
+<p align=center><img src='img/Logos/bannernew.png' width=2000 height=600></p>
 
 <h1 align=center>Propuesta de Proyecto</h1>
 <h1 align=center>Sistema de Alertas Sismicas</h1>
@@ -35,6 +33,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 <li>Kpi: Promedio de usuarios por plataforma red social --> objetivo: Garantizar la accesibilidad al sistema de alertas.</li>
 <li>Kpi: Ratio de presicion de alertas actuales --> objetivo: Aumentar la presicion por lo tanto la calidad de la clasificacion.</li>
 </ul>
+<p>Todos los kpis seran tomados de manera anual.</p>
 
 <h2>Repositorio de GitHub</h2>
 
@@ -68,7 +67,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 
 <p><a href="https://www.linkedin.com/in/juanm-araoz4168/"><img alt="juan" title="Conectar con Juan" src="https://img.shields.io/badge/Juan Manuel Araoz-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> Data Science</p>
 
-<p>Se usara el sistema de responsonbles por area y de asistentes en caso de necesitar ayuda.</p>
+<p>Se usara el sistema de responsanbles por area y de asistentes en caso de necesitar ayuda.</p>
 
 <h2>Stack Tecnologico</h2>
 
@@ -99,7 +98,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la poblacion de un
 
 <p><img src='img/Logos/matplotlibLogo.png' width=50 height=20> &nbsp Matplotlib</p>
 
-<p><img src='img/Logos/powerbiLogo.jpg' width=60 height=20> &nbsp Matplotlib</p>
+<p><img src='img/Logos/powerbiLogo.jpg' width=60 height=20> &nbsp PowerBI</p>
 
 <h3>Data Science</h3>
 
