@@ -35,7 +35,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 
 <p>Este equipo propone un análisis de la situación de los últimos años 2018-2023 y un método de clasificación de sismos.</p>
 
-<p>Ir al <a href="#sistema">inicio</a></p>
+<p>Volver al <a href="#sistema">inicio</a></p>
 
 <h1 align=center id="objetivos">2. Objetivos</h1>
 <h2>Alcance</h2>
@@ -59,6 +59,8 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 <p><li>Data analytics: Se usarán los datos almacenados para mostrar la situal actual con un dashboard interactivo.</p>
 <p><li>Data science: Se creará un modelo de clasificacián de sismos con un modelo de machine learning.</p>
 
+<p>Volver al <a href="#sistema">inicio</a></p>
+
 <h1 align=center id="calidad">3. Calidad de datos</h1>
 
 <p>Fuente de datos:</br>
@@ -74,6 +76,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 
 <p align=center><img src='img/Logos/alcance.jpeg' width=500></p>
 
+<p>Volver al <a href="#sistema">inicio</a></p>
 
 <h1 align=center id="desarrollo">4. Desarrollo del Proyecto</h1>
 <h2>ETL</h2>
@@ -96,6 +99,8 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 <p>Explicar un poco sobre la Visualización</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
 
+<p>Volver al <a href="#sistema">inicio</a></p>
+
 <h1 align=center id="conclusiones">5. Conclusiones y Recomendaciones</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
 
@@ -103,6 +108,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
 
+<p>Volver al <a href="#sistema">inicio</a></p>
 
 <h1 align=center id="stack">6. Stack Tecnológico</h1>
 
@@ -145,6 +151,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 
 <p><img src='img/Logos/renderLogo.png' width=60 height=20> &nbsp Render</p>
 
+<p>Volver al <a href="#sistema">inicio</a></p>
 
 <h1 align=center id="integrantes">7. Integrantes</h1>
 <h2>Conecta con Nosotros</h2>
@@ -164,3 +171,5 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 <h2>Gracias por llegar hasta aquí!</h2>
 
 <p>Esperamos que te haya gustado este proyecto :)</p>
+
+<p>Volver al <a href="#sistema">inicio</a></p>
