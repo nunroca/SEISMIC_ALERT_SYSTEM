@@ -4,16 +4,18 @@
 <h1 align=center>--------------------------------------------------------------------------</h1>
 
 <h2> Índice:</h2>
-<p> 1. Introducción </p> <a href="https://github.com/JPIP8/SISTEMA_DE_ALERTAS_SISMICA/blob/main/README.md#1-introducci%C3%B3n"><p>Int</p></a> 
+<p> 1. Introducción </p>
+<a href="#introduccion">1. Introducción</a>
 <p> 2. Objetivos </p>
 <p> 3. Calidad de datos </p>
 <p> 4. Desarrollo del Proyecto </p>
 <p> 5. Conclusiones y Recomendaciones </p>
 <p> 6. Stack Tecnológico </p>
 <p> 7. Integrantes </p>
+<a href="#integrantes">7. Integrantes</a>
 
 
-<h1 align=center>1. Introducción</h1>
+<h1 align=center id="introduccion">1. Introducción</h1>
 <h2>Quantum Analytics</h2>
 
 <p>Nosotros somos una consultora llamada Quantum Analytics. A partir de la recolección y análisis de datos de movimientos sísmicos en Estados Unidos, Japón y Chile, nuestra consultora utiliza un modelo de machine learning específico para clasificar los movimientos sísmicos y detectar patrones. Al validar la precisión de nuestro modelo, podemos estar seguros de que proporciona resultados confiables para informar a los ciudadanos sobre posibles peligros sísmicos. Finalmente, comunicamos de manera efectiva estos resultados para que la información llegue a la mayor cantidad de personas posible y contribuir así a la seguridad pública.</p>
@@ -137,7 +139,7 @@ Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de u
 <p><img src='img/Logos/renderLogo.png' width=60 height=20> &nbsp Render</p>
 
 
-<h1 align=center>7. Integrantes</h1>
+<h1 align=center id="integrantes">7. Integrantes</h1>
 <h2>Conecta con Nosotros</h2>
 
 <p><a href="https://www.linkedin.com/in/jhon-velasque-228093211/"><img alt="Jhon" title="Conectar con Jhon" src="https://img.shields.io/badge/Jhon Velasque Durand-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> Data Engineer</p>
