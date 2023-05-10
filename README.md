@@ -1,6 +1,6 @@
 <p align=center><img src='img/Logos/bannernew.png' width=2000 height=600></p>
 <h1 align=center>---------------------------------------------------------------------</h1>
-<h1 align=center>Sistema de Alertas Sísmicas</h1>
+<h1 align=center id="sistema">Sistema de Alertas Sísmicas</h1>
 <h1 align=center>---------------------------------------------------------------------</h1>
 
 <h2> Índice:</h2>
@@ -34,6 +34,8 @@ Las alertas actuales con números o colores no brindan mucha información acerca
 Nos enfrentamos a la necesidad de poder comunicar y alertar a la población de una región, sobre la posibilidad de eventos naturales su destructividad y sus consecuencias.</p>
 
 <p>Este equipo propone un análisis de la situación de los últimos años 2018-2023 y un método de clasificación de sismos.</p>
+
+<p>Ir al <a href="#sistema">inicio</a></p>
 
 <h1 align=center id="objetivos">2. Objetivos</h1>
 <h2>Alcance</h2>
