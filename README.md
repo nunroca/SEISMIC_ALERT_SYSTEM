@@ -19,6 +19,8 @@
 
 <a href="#team">7. Team Members</a>
 
+<a href="#thank">8. Thank You</a>
+
 
 
 <h1 align=center id="introduction">1. Introduction</h1>
@@ -181,9 +183,34 @@
 
 <p><a href="https://www.linkedin.com/in/juanm-araoz4168/"><img alt="juan" title="Connect with Juan" src="https://img.shields.io/badge/Juan Manuel Araoz-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> Data Scientist</p>
 
-<h1 align=center>Thank You!</h1>
-<h2>Thank you for reaching this point!</h2>
-<p>We hope you liked this project :)</p>
+<p>Go back to <a href="#sistema">top</a></p>  
 
+
+<h1 align=center id="thank">8. Thank You :)</h1>
+<h2>Thank you for reaching this point!</h2>
+
+<br>
+<p>Dear users,</p>
+<br>
+<br>
+<br>
+<p>We would like to extend our heartfelt gratitude to each and every one of you who have come across our GitHub repository. Your presence and interest mean a lot to us.</p>
+
+<p>As a dedicated and passionate team, we strive to deliver high-quality projects that showcase our love for technology and our commitment to constant improvement. We not only work hard to excel in the field of data, but we also aspire to become better individuals in every aspect of our lives.</p>
+
+<p>Your support and engagement motivate us to push our boundaries and explore new horizons in the world of data. We deeply appreciate your time and attention, and we hope that our projects have provided value, insights, and inspiration to you.</p>
+
+<p>We believe in the power of collaboration and knowledge sharing, and we are grateful for the opportunity to connect with like-minded individuals like you through this platform. Together, we can create a community that fosters growth, innovation, and positive change.</p>
+
+<p>Once again, thank you for being a part of our journey. We are honored to have you here, and we look forward to continuing this exciting adventure with you.</p>
+<br>
+<br>
+<br>
+<p>With warm regards,<br>
+Quantum Analitycs Team</p>
+
+<br>
+<br>
+<br>
 <p>Go back to <a href="#sistema">top</a></p>  
   
