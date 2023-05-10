@@ -4,7 +4,7 @@
 <h1 align=center>--------------------------------------------------------------------------</h1>
 
 <h2> Índice:</h2>
-<p> 1. Introducción </p>
+<p> 1. Introducción </p> <a href="https://github.com/JPIP8/SISTEMA_DE_ALERTAS_SISMICA/blob/main/README.md#1-introducci%C3%B3n"><p>Int</p></a> 
 <p> 2. Objetivos </p>
 <p> 3. Calidad de datos </p>
 <p> 4. Desarrollo del Proyecto </p>
