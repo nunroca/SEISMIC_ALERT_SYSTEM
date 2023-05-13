@@ -1,4 +1,4 @@
-<p align=center><img src='img/Logos/bannernew.png' width=2000 height=600></p>
+<p align=center><img src='img/Logos/Banner-en.png' width=2000 height=600></p>
 <h1 align=center>---------------------------------------------------------------------</h1>
 <h1 align=center id="sistema">Seismic Alert System</h1>
 <h1 align=center>---------------------------------------------------------------------</h1>
