@@ -56,3 +56,41 @@ create table historical_chile(
 select * from historical_japan limit 10;
 select * from historical_usa limit 10;
 select * from historical_chile limit 10;
+
+create table historical_mar_japan(
+       id_mjp int primary key,
+       country varchar(10),
+       mxwatheight decimal(3,2),
+       place varchar(80),
+       time datetime,
+       mag decimal(2,1),
+       lng float,
+       lat float,
+       depth_ float
+);
+
+create table historical_mar_usa(
+       id_mus int primary key,
+       country varchar(10),
+       mxwatheight decimal(3,2),
+       place varchar(80),
+       time datetime,
+       mag decimal(2,1),
+       lng float,
+       lat float,
+       depth_ float
+);
+
+create table historical_mar_chile(
+       id_mcl int primary key,
+       country varchar(10),
+       mxwatheight decimal(3,2),
+       place varchar(80),
+       time datetime,
+       mag decimal(2,1),
+       lng float,
+       lat float,
+       depth_ float
+);
+
+
