@@ -92,5 +92,68 @@ create table historical_mar_chile(
        lat float,
        depth_ float
 );
+##
+-- IMPLEMENTACION DE TRIGERS 
+## 
+DROP TABLE FACTS2;
+#creacion de la tabla FACTS2
+CREATE TABLE FACTS2( 
+ FactId VARCHAR(20) , 
+idcountry INT, 
+ mag DOUBLE,  
+ place text,
+ time timestamp, 
+ tsunami text, 
+ Ing DOUBLE,  
+ lat DOUBLE,
+ depth DOUBLE,  
+ danger smallint,    
+ primary KEY (FactId),
+ foreign key (idcountry) references COUNTRIES(idcountry)
+ );
 
 
+#DATOS DE TEST 
+INSERT INTO JAPAN 
+VALUES(14725,1, 4.3, 'xxx35 km S of Shizunai-furukawach?, Japan', '2023-01-06 20:39:40', 0, 142.291, 42.017, 70.2, 1);
+INSERT INTO USA 
+VALUES(16505,3, 4.3, 'xxx35 km S of Shizunai-furukawach?, Japan', '2023-01-06 20:39:40', 0, 142.291, 42.017, 70.2, 1);
+INSERT INTO CHILE
+VALUES(9340,3, 4.3, 'xxx35 km S of Shizunai-furukawach?, Japan', '2023-01-06 20:39:40', 0, 142.291, 42.017, 70.2, 1);
+#VER LO DATOS DE MANERA DECENDENTE
+SELECT *  FROM CHILE 
+ORDER BY idsismo DESC 
+LIMIT 100;
+
+truncate TABLE FACTS2;
+#ELIMINACION DE DATOS DE TEST 
+DELETE FROM JAPAN
+where idsismo=14725;
+DELETE FROM USA
+where idsismo=16505;
+DELETE FROM CHILE
+where idsismo=9340;
+#DATOS DE LA TABLA FACTS2
+select * from FACTS2;
+DROP trigger FACTS2_AI_CHILE;
+#CREANDO LOS TRIGER PARA CADA PAIS 
+CREATE TRIGGER FACTS2_AI_JAPAN after insert on JAPAN 
+for each row 
+INSERT INTO FACTS2(FactId,idcountry,mag,place,time,tsunami,Ing,lat,depth,danger) 
+VALUES (CONCAT(NEW.idcountry, '-', NEW.idsismo), 
+				NEW.idcountry,NEW.mag,NEW.place,NEW.time,                
+                NEW.tsunami,NEW.lng,NEW.lat,NEW.depth,NEW.danger);
+
+CREATE TRIGGER FACTS2_AI_CHILE after insert on CHILE 
+for each row 
+INSERT INTO FACTS2(FactId,idcountry,mag,place,time,tsunami,Ing,lat,depth,danger) 
+VALUES (CONCAT(NEW.idcountry, '-', NEW.idsismo), 
+				NEW.idcountry,NEW.mag,NEW.place,NEW.time,                
+                NEW.tsunami,NEW.lng,NEW.lat,NEW.depth,NEW.danger);
+	
+CREATE TRIGGER FACTS2_AI_USA  after insert on USA 
+for each row 
+INSERT INTO FACTS2(FactId,idcountry,mag,place,time,tsunami,Ing,lat,depth,danger) 
+VALUES (CONCAT(NEW.idcountry, '-', NEW.idsismo), 
+				NEW.idcountry,NEW.mag,NEW.place,NEW.time,                
+                NEW.tsunami,NEW.lng,NEW.lat,NEW.depth,NEW.danger);
