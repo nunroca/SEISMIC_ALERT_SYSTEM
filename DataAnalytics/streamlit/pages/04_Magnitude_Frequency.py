@@ -6,8 +6,6 @@ import mysql.connector
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from PIL import Image
-
 
 ##################################   End of Importing Section   ##################################
 ##################################################################################################
@@ -71,14 +69,6 @@ connection.close()
 
 st.markdown('<p class = "title_1">Magnitude-Frequency Relationship</p>', unsafe_allow_html=True)
 st.markdown("***")
-
-st.sidebar.markdown("Magnitude-Frequency Relationship")
-
-
-# Load and display image from a local file
-# image = Image.open('BBA.jpeg')
-# st.image(image, caption=' ', use_column_width=True)
-
 
 
 # ================================================================

@@ -6,7 +6,6 @@ import mysql.connector
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from PIL import Image
 
 
 ##################################   End of Importing Section   ##################################
@@ -73,12 +72,6 @@ st.markdown('<p class = "title_1">Seismic Magnitude-Time Distribution</p>', unsa
 st.markdown("***")
 
 
-st.sidebar.markdown("Seismic Magnitude-Time Distribution")
-
-
-# Load and display image from a local file
-# image = Image.open('BBA.jpeg')
-# st.image(image, caption=' ', use_column_width=True)
 
 
 # ================================================================
