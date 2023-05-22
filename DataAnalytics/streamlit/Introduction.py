@@ -25,8 +25,7 @@ st.markdown('<div class="block_intro"><p class="text">We are a consulting firm c
 
 
 # Load and display image from a local file
-# image = Image.open('img/analytics.jpg')
-image = Image.open('streamlit/img/analytics.jpg')
+image = Image.open('analytics.jpg')
 
 st.image(image, caption='Data Analytics is Key for Success', use_column_width=True)
 
