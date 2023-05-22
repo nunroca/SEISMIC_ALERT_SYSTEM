@@ -20,12 +20,12 @@
 <li>depth</li>
 </ul>
 
-<p>We based the selection on the following headmap.</p>
+<p>We based the selection on the following heatmap.</p>
 <p align=center><img src='DTS_img/variablesCorrelation.png' width=600 height=600></p>
 
 <h2>Clusters 'elbow method'</h2>
 
-<p>A fundamental step for any unsupervised algorithm is to determine the optimal number of clusters into which the data may be clustered. Since we do not have any predefined number of clusters in unsupervised learning. We tend to use some method that can help us decide the best number of clusters.  In the case of K-Means clustering, we use Elbow Method for defining the best number of clustering. </br>'Elbow graph'</p>
+<p>A fundamental step for any unsupervised algorithm is to determine the optimal number of clusters into which the data may be clustered. Since we do not have any predefined number of clusters in unsupervised learning. We tend to use some method that can help us decide the best number of clusters.  In the case of K-Means clustering, we use Elbow Method for defining the best number of clustering. </br>As a conclusion <b>4 clusters</b> have been chosen.</p>
 
 <p align=center><img src='DTS_img/cluster_selection.png' width=600 height=600></p>
 
@@ -33,5 +33,12 @@
 <h2>Open and use the model</h2>
 
 <p>The model is saved already trained as modelo_ml.pickle file, instructions to open and use it are:</p>
-
 <p align=center><img src='DTS_img/open_and_use_ml.png' width=1200 height=550></p>
+
+<h2>Testing performance</h2>
+
+<p>The performance test was made using <b>seismicTest.csv</b> file which contains only destructive events. To pass the test the machine learning model must be able to perform higher than 90% in accuracy. We hope to get the most of the events in clusters 0 and 2.</p>
+
+
+<p align=center><img src='DTS_img/seismicTestPic.png' width=1000 height=750></p>
+
