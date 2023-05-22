@@ -26,10 +26,12 @@ host = "database-alertas-sismicas.crcnepco0igw.us-east-1.rds.amazonaws.com"
 user = "admin"
 password = "admin4168"
 database = "alertasSismicas"
+port = 3306
 
 # Opening the connection to the database
 connection = mysql.connector.connect(
     host = host,
+    port = port,
     user = user,
     password = password,
     database = database
