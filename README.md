@@ -55,10 +55,12 @@
 
 <h2>KPIs</h2>
 <ul>
-<li>KPI: Percentage of Effective Coverage --> Objective: Expand the coverage of alerts.</li>
-<li>KPI: Average Reaction Time --> Objective: Improve the time and type of reaction.</li>
-<li>KPI: Average Users per Social Media Platform --> Objective: Ensure accessibility to the alert system.</li>
-<li>KPI: Accuracy Ratio of Current Alerts --> Objective: Increase accuracy and classification quality.</li>
+<li>KPI: Alert Response Time:
+  <p>This measures the time it takes for the alert system to notify the people after an earthquake event occurs. This KPI helps assess the speed and efficiency of your alert.</p></li>
+<li>KPI: Alert Reach:
+  <p>Assess the percentage of the population reached by the alerts. This KPI provides insights into the coverage and penetration of the alert system and helps identify areas or demographic groups that may need additional attention.</p></li>
+<li>KPI: Impact Assesment:
+  <p>Assess the impact of earthquakes by analyzing their relationships with secondary events, such as tsunamis and volcanic hazards. This KPI can provide insights into the potential consequences. Increase accuracy and clasification quality.</p></li>
 </ul>
 <p>All KPIs will be measured annually.</p>
 
@@ -109,8 +111,7 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
 
 <h2>Visualization</h2>
-<p>Explain a little about Visualization</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+<p>Leveraging the powerful capabilities of streamlit as our core visualization tool, we have successfully generated a series of comprehensive and insightful graphs that shed light on the intricate nature of seismic activity in Japan, Chile, and the United States. These meticulously crafted visual representations serve as pivotal instruments in unraveling the complex dynamics of seismic movements, enabling us to discern patterns, trends, and potential risks with enhanced clarity. Our diligent efforts in harnessing the potential of streamlit have unlocked a wealth of previously inaccessible data, empowering us to conduct a thorough analysis of seismic phenomena. We cordially invite you to embark on an immersive journey through our detailed documentation, where we delve into the intricacies of our visualization process and its profound impact on seismic analysis.</p>
 
 <p>Go back to <a href="#sistema">top</a></p>
 
