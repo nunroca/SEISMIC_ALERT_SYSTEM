@@ -25,9 +25,9 @@ st.markdown('<div class="block_intro"><p class="text">We are a consulting firm c
 
 
 # Load and display image from a local file
-image = Image.open('analytics.jpg')
+# image = Image.open('analytics.jpg')
 
-st.image(image, caption='Data Analytics is Key for Success', use_column_width=True)
+# st.image(image, caption='Data Analytics is Key for Success', use_column_width=True)
 
 st.markdown('<p class="title_2">Our Team</p>', unsafe_allow_html=True)
 st.markdown('<div class="block_team"><p class="text"> <a href="https://www.linkedin.com/in/juan-pablo-idrovo-3366a351/" target="_blank">Juan Pablo Idrovo</a> - Data Analyst<br><a href="https://www.linkedin.com/in/juanm-araoz4168/" target="_blank">Juan Manuel Araoz</a> - Data Scientist<br> <a href="https://www.linkedin.com/in/esteban-roca-carbajal-5b3957135/" target="_blank">Esteban Roca Carbajal</a> - Data Scientist<br> <a href="https://www.linkedin.com/in/jhon-velasque-228093211/" target="_blank">Jhon Velasque Durand</a> - Data Engineer<br> <a href="https://www.linkedin.com/in/luis-fernando-montero-castro-711b6524b/" target="_blank">Luis Fernando Montero</a> - Data Engineer</p></div>', unsafe_allow_html=True)
