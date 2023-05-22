@@ -47,6 +47,11 @@
 
 <p>Leveraging the powerful capabilities of streamlit as our core visualization tool, we have successfully generated a series of comprehensive and insightful graphs that shed light on the intricate nature of seismic activity in Japan, Chile, and the United States. These meticulously crafted visual representations serve as pivotal instruments in unraveling the complex dynamics of seismic movements, enabling us to discern patterns, trends, and potential risks with enhanced clarity. Our diligent efforts in harnessing the potential of streamlit have unlocked a wealth of previously inaccessible data, empowering us to conduct a thorough analysis of seismic phenomena. We cordially invite you to embark on an immersive journey through our detailed documentation, where we delve into the intricacies of our visualization process and its profound impact on seismic analysis.</p>
 
+<h2>Magnitude-Frequency Relationship</h2>
+<p>The frequency axis provides insights into the distribution of earthquakes across different magnitudes. It can help identify patterns or trends in earthquake occurrence, such as the presence of more frequent smaller-magnitude earthquakes or rare, larger-magnitude events. This information is valuable for understanding seismic activity and assessing the relative occurrence rates of different magnitudes.</p>
+<p>In this graph we have the data from the United States.</p>
+
+
 <p>Go back to <a href="#sistema">top</a></p>
 
 
