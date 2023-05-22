@@ -35,3 +35,10 @@
 <p>The model is saved already trained as modelo_ml.pickle file, instructions to open and use it are:</p>
 
 <p align=center><img src='DTS_img/open_and_use_ml.png' width=1200 height=550></p>
+
+
+<h2>Testing performance</h2>
+
+<p>The test was made using <b>seismicTest.csv</b> file which contains only dangerous events, the model must be able to label with 0 and 2 at least 90% of the total.</p>
+
+<p align=center><img src='DTS_img/seismicTestPic.png' width=1000 height=750></p>
