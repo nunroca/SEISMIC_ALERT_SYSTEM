@@ -6,7 +6,6 @@ import mysql.connector
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from PIL import Image
 
 
 ##################################   End of Importing Section   ##################################
@@ -77,7 +76,6 @@ st.markdown("***")
 
 st.markdown('<p class = "title_2">DataFrames:</p>', unsafe_allow_html=True)
 
-st.sidebar.markdown("Sum of Seismic Activities per Country")
 
 if st.button("Show preview"):
     st.write("Facts table:")
@@ -91,9 +89,6 @@ if st.button("Show preview"):
 
 st.markdown("***")
 
-# Load and display image from a local file
-# image = Image.open('BBA.jpeg')
-# st.image(image, caption=' ', use_column_width=True)
 
 # ================================================================
 # 01 - Creating Sum of Seismic Activities per Country
