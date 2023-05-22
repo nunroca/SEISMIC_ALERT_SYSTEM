@@ -19,7 +19,7 @@
 
 <h2>Streamlit</h2>
 <p align=center><img src='img/logo.png' width=500></p>
-<p>Take a look at our <a href="https://jpip8-sistema-de-aler-dataanalyticsstreamlitintroduction-d6ak17.streamlit.app/Conclusion" target="_blank">StreamLit</a> interactive dashboard.</p>
+<p>Take a look at our <a href="https://jpip8-sistema-de-aler-dataanalyticsstreamlitintroduction-d6ak17.streamlit.app/" target="_blank">StreamLit</a> interactive dashboard.</p>
 
 <h2>Quantum Analytics</h2>
 <p>Hello there, my name is Juan Pablo Idrovo. As a data analyst at Quantum Analytics, my role involves extracting valuable insights from seismic data using advanced analytical techniques. I process and analyze large datasets to identify patterns, anomalies, and trends in seismic activity. By collaborating with my team, we develop predictive models and provide actionable recommendations for risk assessment and mitigation strategies. I effectively communicate our findings, thereby contributing to public safety and informing stakeholders about seismic hazards.</p>
