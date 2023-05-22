@@ -90,7 +90,7 @@ if st.button("Show preview"):
 st.markdown("***")
 
 # Load and display image from a local file
-image = Image.open('./BBVA.png')
+image = Image.open('img/BBA.jpeg')
 st.image(image, caption=' ', use_column_width=True)
 
 # ================================================================
