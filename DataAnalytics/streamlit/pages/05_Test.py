@@ -78,7 +78,6 @@ df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lat', 'lon', 'danger'])
 
 # Set up Streamlit
 st.title("Earthquake Events Map")
-st.write("Filter by Year")
 
 # Create a slider to select the year
 st.markdown('<br>', unsafe_allow_html=True)
@@ -106,7 +105,7 @@ for _, row in filtered_df.iterrows():
     folium.Marker(
         location=[row['lat'], row['lon']],
         icon=folium.Icon(color=color_labels[row['danger']]),
-        popup=f"Country: {row['idcountry']} | Danger: {row['danger']}"
+        popup=f"Time: {row['time']} | Danger: {row['danger']}"
     ).add_to(m)
 
 # Display the map using Streamlit
