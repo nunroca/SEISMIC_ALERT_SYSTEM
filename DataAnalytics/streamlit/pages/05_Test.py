@@ -81,23 +81,18 @@ st.title("Earthquake Events Map")
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class="title_3">Filter by Date Range:</p>', unsafe_allow_html=True)
 
-# # Get the date range from the user
-# min_date = df['time'].min().date()
-# max_date = df['time'].max().date()
-# start_date = st.date_input("Start Date", min_value=min_date, max_value=max_date, value=min_date)
-# end_date = st.date_input("End Date", min_value=min_date, max_value=max_date, value=max_date)
+# Get the date range from the user
+min_date = df['time'].min().date()
+max_date = df['time'].max().date()
+start_date = st.date_input("Start Date", min_value=min_date, max_value=max_date, value=min_date)
+end_date = st.date_input("End Date", min_value=min_date, max_value=max_date, value=max_date)
 
-# # Filter the data based on the selected date range
-# filtered_df = df[(df['time'].dt.date >= start_date) & (df['time'].dt.date <= end_date)]
+# Filter the data based on the selected date range
+filtered_df = df[(df['time'].dt.date >= start_date) & (df['time'].dt.date <= end_date)]
 
-# ###########   TEST   ####################
-time_filter = st.date_input(" ", value=(df['time'].min().date(), df['time'].max().date()))
-
-# Filter the data based on the time filter value
-start_date, end_date = pd.to_datetime(time_filter)
-filtered_df = df[(df['time'] >= start_date) & (df['time'] <= end_date)]
-# ###############################
-
+# Clean the data: Remove rows with missing or invalid latitude/longitude values
+filtered_df = filtered_df.dropna(subset=['lat', 'lon'])
+filtered_df = filtered_df[(filtered_df['lat'] != 0) & (filtered_df['lon'] != 0)]
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
@@ -112,14 +107,13 @@ color_labels = {
 # Add markers to the map
 for _, row in filtered_df.iterrows():
     folium.Marker(
-        location=[row['lat'], row['lng']],
+        location=[row['lat'], row['lon']],
         icon=folium.Icon(color=color_labels[row['danger']]),
         popup=f"Time: {row['time']} | Danger: {row['danger']}"
     ).add_to(m)
 
 # Display the map using Streamlit
 folium_static(m)
-
 
 
 ###################################   End of STREAMLIT CODE   ####################################
