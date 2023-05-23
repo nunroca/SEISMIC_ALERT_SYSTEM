@@ -5,8 +5,8 @@ import pandas as pd
 import mysql.connector
 import folium
 from streamlit_folium import folium_static
-import matplotlib.pyplot as plt
-import numpy as np
+from datetime import datetime
+
 
 
 ##################################   End of Importing Section   ##################################
@@ -83,14 +83,20 @@ st.title("Earthquake Events Map")
 # Create a slider to select the year
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Year:</p>', unsafe_allow_html=True)
+
+# Get the current year and day
+current_year = datetime.now().year
+current_day = datetime.now().day
+
+
+# Create a slider to select the year
 min_year = int(df['time'].dt.year.min())
-max_year = int(df['time'].dt.year.max())
-max_year = max_year + 1
+max_year = current_year if current_day == 1 else current_year + 1
 
 selected_year = st.slider("  ", min_value=min_year, max_value=max_year)
 
 # Filter the data based on the selected year
-filtered_df = df[df['time'].dt.year < selected_year]
+filtered_df = df[df['time'].dt.year == selected_year]
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
