@@ -55,10 +55,12 @@
 
 <h2>KPIs</h2>
 <ul>
-<li>KPI: Percentage of Effective Coverage --> Objective: Expand the coverage of alerts.</li>
-<li>KPI: Average Reaction Time --> Objective: Improve the time and type of reaction.</li>
-<li>KPI: Average Users per Social Media Platform --> Objective: Ensure accessibility to the alert system.</li>
-<li>KPI: Accuracy Ratio of Current Alerts --> Objective: Increase accuracy and classification quality.</li>
+  <li>KPI: Alert Response Time:
+    <p>This measures the time it takes for the alert system to notify the people after an earthquake event occurs. This KPI helps assess the speed and efficiency of your alert.</p></li>
+  <li>KPI: Alert Reach:
+    <p>Assess the percentage of the population reached by the alerts. This KPI provides insights into the coverage and penetration of the alert system and helps identify areas or demographic groups that may need additional attention.</p></li>
+  <li>KPI: Impact Assesment:
+    <p>Assess the impact of earthquakes by analyzing their relationships with secondary events, such as tsunamis and volcanic hazards. This KPI can provide insights into the potential consequences. Increase accuracy and clasification quality.</p></li>
 </ul>
 <p>All KPIs will be measured annually.</p>
 
@@ -67,6 +69,10 @@
 <p><li>Data Engineering: Data will be extracted from different sources, transformed, and stored in the Amazon AWS cloud.</p>
 <p><li>Data Analytics: The stored data will be used to show the current situation with an interactive dashboard.</p>
 <p><li>Data science: A seismic classification model will be created using machine learning.</p>
+
+<h2>WorkFlow</h2>
+<p align=center><img src='img/Logos/WorkFlow.png' width=1000></p>
+
 
 <p>Go back to <a href="#sistema">top</a></p>
 
