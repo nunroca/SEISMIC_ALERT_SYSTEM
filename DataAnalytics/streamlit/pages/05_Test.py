@@ -63,12 +63,14 @@ st.markdown("***")
 st.markdown("***")
 st.markdown('<div class="block_intro"><p class="text">The second graph, titled "Seismic Magnitude-Time Distribution", depicts the relationship between seismic magnitude and time for three countries: Japan, Chile, and the United States. This metric helps identify temporal trends and changes in seismic magnitudes over the specified time period, providing valuable insights into the overall seismic activity and potential risks within each country or region.<br><br> Understanding the magnitude-time distribution is crucial for seismic forecasting, hazard assessment, and preparedness efforts. By visualizing the variations in seismic magnitudes over time, this graph provides a broader perspective on the temporal behavior of seismic activity in Japan, Chile, and the United States. It aids in identifying potential patterns, trends, or anomalies that can contribute to a better understanding of the seismic activity and inform risk mitigation strategies.<br><br> Please have in mind that the IDs for the countries are:<br> USA[1] - Japan[2] - Chile[3]</p></div>', unsafe_allow_html=True)
 
+
+# Changing numbers to the actual country name.
+facts['idcountry'] = facts['idcountry'].replace(1, "USA")
+facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
+facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
+
 # Filter the data for the three countries you want to plot
 countries_list = facts['idcountry'].unique().tolist()
-countries_list[0] = "USA"
-countries_list[1] = "Japan"
-countries_list[2] = "Chile"
-print(countries_list)
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Country:</p>', unsafe_allow_html=True)
 countries = st.multiselect(" ", countries_list, default = ['Japan'])
@@ -82,7 +84,6 @@ max_year = int(facts['time'].dt.year.max())
 selected_year = st.slider(" ", min_value = min_year, max_value = max_year)
 
 # Filter the data based on the selected year and countries
-# filtered_data = facts[(facts['time'].dt.year == selected_year)]
 filtered_data = facts[(facts['time'].dt.year == selected_year) & (facts['idcountry'].isin(countries))]
 
 # Create a figure and axes with adjusted size
