@@ -84,11 +84,20 @@ st.markdown('<p class="title_3">Filter by Date:</p>', unsafe_allow_html=True)
 # Get the date range from the user
 min_date = pd.to_datetime(df['time']).min().date()
 max_date = pd.to_datetime(df['time']).max().date()
-start_date = st.date_input("Start Date", min_value=min_date, max_value=max_date, value=min_date)
-end_date = st.date_input("End Date", min_value=min_date, max_value=max_date, value=max_date)
+
+selected_date_range = st.slider(
+    "Select Date Range",
+    min_value = min_date,
+    max_value = max_date,
+    value = (min_date, max_date),
+    format = "YYYY-MM-DD"
+)
 
 # Filter the data based on the selected date range
-filtered_df = df[(df['time'].dt.date >= start_date) & (df['time'].dt.date <= end_date)]
+filtered_df = df[
+    (df['time'].dt.date >= selected_date_range[0]) &
+    (df['time'].dt.date <= selected_date_range[1])
+]
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
