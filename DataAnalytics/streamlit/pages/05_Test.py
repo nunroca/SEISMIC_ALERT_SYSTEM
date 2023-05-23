@@ -69,9 +69,13 @@ facts['idcountry'] = facts['idcountry'].replace(1, "USA")
 facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
-df = pd.DataFrame(facts, columns=['lat', 'lng'])
+facts['lon'] = facts['lng'].rename("lon")
 
-st.map(df)
+df = pd.DataFrame(facts, columns=['idcountry', 'lat', 'lon', 'danger'])
+df_map = pd.DataFrame(df, columns=['lat', 'lon'])
+# print(df_map)
+
+st.map(df_map, use_container_width=True)
 
 
 
