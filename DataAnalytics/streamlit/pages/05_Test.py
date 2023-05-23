@@ -85,11 +85,12 @@ st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Year:</p>', unsafe_allow_html=True)
 min_year = int(df['time'].dt.year.min())
 max_year = int(df['time'].dt.year.max())
+max_year =+ 1
 
-selected_year = st.slider("  ", min_value=min_year, max_value=(max_year + 1))
+selected_year = st.slider("  ", min_value=min_year, max_value=max_year)
 
 # Filter the data based on the selected year
-filtered_df = df[df['time'].dt.year == selected_year]
+filtered_df = df[df['time'].dt.year < selected_year]
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
