@@ -79,24 +79,17 @@ df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lng', 'lat', 'danger'])
 
 # Set up Streamlit
 st.title("Earthquake Events Map")
-
-# Create a slider to select the year
 st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('<p class = "title_3">Filter by Year:</p>', unsafe_allow_html=True)
+st.markdown('<p class="title_3">Filter by Date Range:</p>', unsafe_allow_html=True)
 
-# Get the current year and day
-current_year = datetime.now().year
-current_day = datetime.now().day
+# Get the date range from the user
+min_date = df['time'].min().date()
+max_date = df['time'].max().date()
+start_date = st.date_input("Start Date", min_value=min_date, max_value=max_date, value=min_date)
+end_date = st.date_input("End Date", min_value=min_date, max_value=max_date, value=max_date)
 
-
-# Create a slider to select the year
-min_year = int(df['time'].dt.year.min())
-max_year = current_year if current_day == 1 else current_year + 1
-
-selected_year = st.slider("  ", min_value=min_year, max_value=max_year)
-
-# Filter the data based on the selected year
-filtered_df = df[df['time'].dt.year == selected_year]
+# Filter the data based on the selected date range
+filtered_df = df[(df['time'].dt.date >= start_date) & (df['time'].dt.date <= end_date)]
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
@@ -118,8 +111,6 @@ for _, row in filtered_df.iterrows():
 
 # Display the map using Streamlit
 folium_static(m)
-
-# st.map(df_map, use_container_width=True)
 
 
 
