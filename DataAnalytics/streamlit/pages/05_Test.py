@@ -73,7 +73,7 @@ facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
 facts['lon'] = facts['lng'].rename("lon")
 
-df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lat', 'lon', 'danger'])
+df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lon', 'lat', 'danger'])
 # df_map = pd.DataFrame(df, columns=['lat', 'lon'])
 
 # Set up Streamlit
