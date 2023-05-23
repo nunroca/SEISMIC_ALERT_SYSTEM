@@ -81,9 +81,12 @@ st.title("Earthquake Events Map")
 st.write("Filter by Year")
 
 # Create a slider to select the year
-min_year = df['time'].dt.year.min()
-max_year = df['time'].dt.year.max()
-selected_year = st.slider("Select Year", min_value=min_year, max_value=max_year)
+st.markdown('<br>', unsafe_allow_html=True)
+st.markdown('<p class = "title_3">Filter by Year:</p>', unsafe_allow_html=True)
+min_year = int(df['time'].dt.year.min())
+max_year = int(df['time'].dt.year.max())
+
+selected_year = st.slider("  ", min_value=min_year, max_value=max_year)
 
 # Filter the data based on the selected year
 filtered_df = df[df['time'].dt.year == selected_year]
