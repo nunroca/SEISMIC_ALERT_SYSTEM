@@ -85,7 +85,7 @@ st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Year:</p>', unsafe_allow_html=True)
 min_year = int(df['time'].dt.year.min())
 max_year = int(df['time'].dt.year.max())
-max_year =+ 1
+max_year = max_year + 1
 
 selected_year = st.slider("  ", min_value=min_year, max_value=max_year)
 
