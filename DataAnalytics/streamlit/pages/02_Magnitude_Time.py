@@ -77,7 +77,7 @@ st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Country:</p>', unsafe_allow_html=True)
 countries = st.multiselect(" ", countries_list, default = ["Japan"])
 
-# Create a Streamlit sidebar with a time filter slider
+# Create a Streamlit time filter slider
 
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Year:</p>', unsafe_allow_html=True)
@@ -86,7 +86,6 @@ max_year = int(facts['time'].dt.year.max())
 selected_year = st.slider(" ", min_value = min_year, max_value = max_year)
 
 # Filter the data based on the selected year and countries
-# filtered_data = facts[(facts['time'].dt.year == selected_year)]
 filtered_data = facts[(facts['time'].dt.year == selected_year) & (facts['idcountry'].isin(countries))]
 
 # Create a figure and axes with adjusted size

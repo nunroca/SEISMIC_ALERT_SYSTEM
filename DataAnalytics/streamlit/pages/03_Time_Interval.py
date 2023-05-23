@@ -78,7 +78,6 @@ facts['time_between'] = facts['time'].diff()
 unique_countries_03 = facts['idcountry'].unique()
 
 
-
 # Create multiselect filter for countries
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Country:</p>', unsafe_allow_html=True)

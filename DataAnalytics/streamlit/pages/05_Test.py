@@ -69,46 +69,9 @@ facts['idcountry'] = facts['idcountry'].replace(1, "USA")
 facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
-# Filter the data for the three countries you want to plot
-countries_list = facts['idcountry'].unique().tolist()
-st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('<p class = "title_3">Filter by Country:</p>', unsafe_allow_html=True)
-countries = st.multiselect(" ", countries_list, default = ['Japan'])
+df = pd.DataFrame(facts, columns=['lat', 'lng'])
 
-# Create a Streamlit sidebar with a time filter slider
-
-st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('<p class = "title_3">Filter by Year:</p>', unsafe_allow_html=True)
-min_year = int(facts['time'].dt.year.min())
-max_year = int(facts['time'].dt.year.max())
-selected_year = st.slider(" ", min_value = min_year, max_value = max_year)
-
-# Filter the data based on the selected year and countries
-filtered_data = facts[(facts['time'].dt.year == selected_year) & (facts['idcountry'].isin(countries))]
-
-# Create a figure and axes with adjusted size
-fig, ax = plt.subplots(figsize=(10, 6))
-
-# Create a line chart for each country
-for country in countries:
-    country_data = filtered_data[filtered_data['idcountry'] == country]
-    plt.plot(country_data['time'], country_data['mag'], label=country)
-
-# Set the chart title and labels
-plt.title('Seismic Magnitude-Time Distribution')
-plt.xlabel('Time')
-plt.ylabel('Magnitude')
-
-# Rotate x-axis labels for better readability
-plt.xticks(rotation=45)
-
-# Add a legend
-plt.legend()
-
-# Display the plot using Streamlit
-st.pyplot(fig)
-
-
+st.map(df)
 
 
 
