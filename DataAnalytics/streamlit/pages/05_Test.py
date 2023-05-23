@@ -36,7 +36,8 @@ connection = mysql.connector.connect(
 )
 
 # SELECTING the table "FACTS" and giving the info to a pandas data frame
-query = ("SELECT * FROM FACTS2;")
+# query = ("SELECT * FROM FACTS2;")
+query = ("SELECT * FROM FACTS;")
 facts = pd.read_sql(query, connection)
 
 # Closing the connection with the database
