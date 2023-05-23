@@ -3,6 +3,8 @@
 import streamlit as st
 import pandas as pd
 import mysql.connector
+import folium
+from streamlit_folium import folium_static
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -71,11 +73,43 @@ facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
 facts['lon'] = facts['lng'].rename("lon")
 
-df = pd.DataFrame(facts, columns=['idcountry', 'lat', 'lon', 'danger'])
-df_map = pd.DataFrame(df, columns=['lat', 'lon'])
-# print(df_map)
+df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lat', 'lon', 'danger'])
+# df_map = pd.DataFrame(df, columns=['lat', 'lon'])
 
-st.map(df_map, use_container_width=True)
+# Set up Streamlit
+st.title("Earthquake Events Map")
+st.write("Filter by Year")
+
+# Create a slider to select the year
+min_year = df['time'].dt.year.min()
+max_year = df['time'].dt.year.max()
+selected_year = st.slider("Select Year", min_value=min_year, max_value=max_year)
+
+# Filter the data based on the selected year
+filtered_df = df[df['time'].dt.year == selected_year]
+
+# Create the map
+m = folium.Map(location=[0, 0], zoom_start=2)
+
+# Define color labels based on danger level
+color_labels = {
+    1: 'green',
+    2: 'orange',
+    3: 'red'
+}
+
+# Add markers to the map
+for _, row in filtered_df.iterrows():
+    folium.Marker(
+        location=[row['lat'], row['lon']],
+        icon=folium.Icon(color=color_labels[row['danger']]),
+        popup=f"Country: {row['idcountry']} | Danger: {row['danger']}"
+    ).add_to(m)
+
+# Display the map using Streamlit
+folium_static(m)
+
+# st.map(df_map, use_container_width=True)
 
 
 
