@@ -103,7 +103,7 @@ color_labels = {
 # Add markers to the map
 for _, row in filtered_df.iterrows():
     folium.Marker(
-        location=[row['lat'], row['lon']],
+        location=[row['lat'], row['lng']],
         icon=folium.Icon(color=color_labels[row['danger']]),
         popup=f"Time: {row['time']} | Danger: {row['danger']}"
     ).add_to(m)
