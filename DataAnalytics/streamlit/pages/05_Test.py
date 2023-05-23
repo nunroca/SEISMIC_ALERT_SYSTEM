@@ -5,7 +5,6 @@ import pandas as pd
 import mysql.connector
 import folium
 from streamlit_folium import folium_static
-from datetime import datetime
 
 
 
@@ -89,7 +88,7 @@ start_date = st.date_input("Start Date", min_value=min_date, max_value=max_date,
 end_date = st.date_input("End Date", min_value=min_date, max_value=max_date, value=max_date)
 
 # Filter the data based on the selected date range
-filtered_df = df[(df['time'].dt.date >= start_date) & (df['time'].dt.date <= end_date)]
+filtered_df = df[(df['time'] >= start_date) & (df['time'] <= end_date)]
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
