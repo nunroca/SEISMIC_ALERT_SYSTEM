@@ -81,11 +81,20 @@ facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 # Use for FACTS
 facts.rename(columns={'lng': 'lon'}, inplace=True)
 
+# Filter the data based on the selected year
+min_year = pd.to_datetime(facts['time']).dt.year.min()
+max_year = pd.to_datetime(facts['time']).dt.year.max()
+
+selected_year = st.slider("Select Year:", min_value=min_year, max_value=max_year)
+
+# Filter the data based on the selected year
+filtered_facts = facts[pd.to_datetime(facts['time']).dt.year == selected_year]
+
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
 
 # Add circles to the map
-for _, row in facts.iterrows():
+for _, row in filtered_facts.iterrows():
     danger = row['danger']
     color = 'green' if danger == 1 else 'orange' if danger == 2 else 'red'
     
@@ -101,8 +110,7 @@ for _, row in facts.iterrows():
 # Display the map using Streamlit
 folium_static(m)
 
-# # Display the map using Streamlit
-# st.markdown(m._repr_html_(), unsafe_allow_html=True)
+
 
 
 ###################################   End of STREAMLIT CODE   ####################################
