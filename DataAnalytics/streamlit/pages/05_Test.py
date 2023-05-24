@@ -71,52 +71,32 @@ facts['idcountry'] = facts['idcountry'].replace(1, "USA")
 facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
-# facts['lon'] = facts['lng'].rename("lon")
-
-df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lng', 'lat', 'danger'])
-# df_map = pd.DataFrame(df, columns=['lat', 'lon'])
 
 # Set up Streamlit
 st.title("Earthquake Events Map")
-st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('<p class="title_3">Filter by Date:</p>', unsafe_allow_html=True)
 
-# Get the date range from the user
-min_date = pd.to_datetime(df['time']).min().date()
-max_date = pd.to_datetime(df['time']).max().date()
 
-selected_date = st.slider(
-    "  ",
-    min_value = min_date,
-    max_value = max_date,
-    format = "YYYY-MM-DD"
-)
-
-# Filter the data based on the selected date range
-filtered_df = df[
-    (df['time'].dt.date <= selected_date)
-]
+facts.rename(columns={'Ing': 'lon'}, inplace=True)
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
 
-# Define color labels based on danger level
-color_labels = {
-    1: 'green',
-    2: 'orange',
-    3: 'red'
-}
-
-# Add markers to the map
-for _, row in filtered_df.iterrows():
-    folium.Marker(
-        location=[row['lat'], row['lng']],
-        icon=folium.Icon(color=color_labels[row['danger']]),
-        popup=f"Time: {row['time']} | Danger: {row['danger']}"
+# Add circles to the map
+for _, row in facts.iterrows():
+    danger = row['danger']
+    color = 'green' if danger == 1 else 'orange' if danger == 2 else 'red'
+    
+    folium.CircleMarker(
+        location=[row['lat'], row['lon']],
+        radius=5,
+        color=color,
+        fill=True,
+        fill_color=color,
+        popup=f"Magnitude: {row['mag']} | Depth: {row['depth']} | Danger: {danger}"
     ).add_to(m)
 
 # Display the map using Streamlit
-folium_static(m)
+st.markdown(m._repr_html_(), unsafe_allow_html=True)
 
 
 ###################################   End of STREAMLIT CODE   ####################################
