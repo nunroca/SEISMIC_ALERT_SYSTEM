@@ -74,23 +74,11 @@ facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 # facts['lon'] = facts['lng'].rename("lon")
 
 df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lng', 'lat', 'danger'])
-# df_map = pd.DataFrame(df, columns=['lat', 'lon'])
+df_map = pd.DataFrame(df, columns=['lat', 'lon'])
+st.map(df)
 
 # Set up Streamlit
 st.title("Earthquake Events Map")
-
-# Create the map
-m = folium.Map(location=[0, 0], zoom_start=2)
-
-# Add markers to the map
-for _, row in df.iterrows():
-    folium.Marker(
-        location=[row['lat'], row['lng']],
-        popup=f"Time: {row['time']} | Danger: {row['danger']}"
-    ).add_to(m)
-
-# Display the map using Streamlit
-st.markdown(folium.Map(location=[0, 0], zoom_start=2)._repr_html_(), unsafe_allow_html=True)
 
 
 ###################################   End of STREAMLIT CODE   ####################################
