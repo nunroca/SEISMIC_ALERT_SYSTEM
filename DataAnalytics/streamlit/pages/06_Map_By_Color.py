@@ -53,7 +53,7 @@ connection.close()
 ##################################################################################################
 ##################################   Start of STREAMLIT CODE   ###################################
 
-st.markdown('<p class = "title_1">Test</p>', unsafe_allow_html=True)
+st.markdown('<p class = "title_1">Seismic Event Map By Danger</p>', unsafe_allow_html=True)
 st.markdown("***")
 
 
@@ -63,7 +63,7 @@ st.markdown("***")
 # 05 - Creating TEST Map
 # ================================================================
 st.markdown("***")
-st.markdown('<div class="block_intro"><p class="text">The second graph, titled "Seismic Magnitude-Time Distribution", depicts the relationship between seismic magnitude and time for three countries: Japan, Chile, and the United States. This metric helps identify temporal trends and changes in seismic magnitudes over the specified time period, providing valuable insights into the overall seismic activity and potential risks within each country or region.<br><br> Understanding the magnitude-time distribution is crucial for seismic forecasting, hazard assessment, and preparedness efforts. By visualizing the variations in seismic magnitudes over time, this graph provides a broader perspective on the temporal behavior of seismic activity in Japan, Chile, and the United States. It aids in identifying potential patterns, trends, or anomalies that can contribute to a better understanding of the seismic activity and inform risk mitigation strategies.<br><br> Please have in mind that the IDs for the countries are:<br> USA[1] - Japan[2] - Chile[3]</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="block_intro"><p class="text">The map provides a clear overview of where and how severe the earthquakes have been. On the map, you will see circles representing each earthquake event. The size of the circles remains constant, but the color varies based on the danger level of the earthquake. This color distinction helps us quickly identify the severity of each event.<br><br> The legend for the colors is very intuitive, is as follows:<br><br> Green circles represent earthquakes with a danger level of 1.<br> Orange circles represent earthquakes with a danger level of 2.<br> Red circles represent earthquakes with a danger level of 3.</p></div>', unsafe_allow_html=True)
 
 
 # Changing numbers to the actual country name.
@@ -72,8 +72,7 @@ facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
 
-# Set up Streamlit
-st.title("Earthquake Events Map")
+
 
 
 facts.rename(columns={'Ing': 'lon'}, inplace=True)
