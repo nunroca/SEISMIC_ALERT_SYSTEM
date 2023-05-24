@@ -78,45 +78,19 @@ df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lng', 'lat', 'danger'])
 
 # Set up Streamlit
 st.title("Earthquake Events Map")
-st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('<p class="title_3">Filter by Date:</p>', unsafe_allow_html=True)
-
-# Get the date range from the user
-min_date = pd.to_datetime(df['time']).min().date()
-max_date = pd.to_datetime(df['time']).max().date()
-
-selected_date = st.slider(
-    "  ",
-    min_value = min_date,
-    max_value = max_date,
-    format = "YYYY-MM-DD"
-)
-
-# Filter the data based on the selected date range
-filtered_df = df[
-    (df['time'].dt.date <= selected_date)
-]
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
 
-# Define color labels based on danger level
-color_labels = {
-    1: 'green',
-    2: 'orange',
-    3: 'red'
-}
-
 # Add markers to the map
-for _, row in filtered_df.iterrows():
+for _, row in df.iterrows():
     folium.Marker(
         location=[row['lat'], row['lng']],
-        icon=folium.Icon(color=color_labels[row['danger']]),
         popup=f"Time: {row['time']} | Danger: {row['danger']}"
     ).add_to(m)
 
 # Display the map using Streamlit
-folium_static(m)
+st.markdown(folium.Map(location=[0, 0], zoom_start=2)._repr_html_(), unsafe_allow_html=True)
 
 
 ###################################   End of STREAMLIT CODE   ####################################

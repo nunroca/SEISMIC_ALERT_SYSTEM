@@ -28,8 +28,8 @@ default_args={
     
 }
 
-with open('modelo_ml.pickle', 'rb') as ml:
-    model = pickle.load(ml)
+with open('/opt/airflow/data/modelo_ml.pickle', 'rb') as ml:
+    model = pickle.load(ml) 
 
 '''================================ CHILE ==========================='''
 
@@ -77,6 +77,14 @@ def dat_inic_chil():
     return(df)
 
 
+def nor_danger(a):
+    b=0
+    if   a==0: b=3
+    elif a==1: b=1
+    elif a==2: b=3
+    elif a==3: b=2
+    return(b)
+
 
 def generat_datchile():
 
@@ -94,7 +102,7 @@ def generat_datchile():
         
     df["idcountry"]=2
     df["tsunami"]=0
-    df["danger"]="1"
+    df["danger"]=1
 
     df=df[df["mag"]>=3]
 
@@ -105,14 +113,14 @@ def generat_datchile():
     result_x = model.predict(x)
     df["danger"]=result_x
     
-    
+    #danger
+    df["danger"]=df["danger"].apply(lambda x: nor_danger(x))
+       
     return(df)
 
 def generat_cadchile():
-    '''
-    Extrae los datos de USA del mes actual
-    y nos quedamos con los del día de ayer, si los hay
-    '''
+    
+ 
     df_ = generat_datchile()
 
     # Creamos las listas para armar la cadena sql
@@ -134,7 +142,9 @@ def generat_cadchile():
 
     cadena = "INSERT INTO CHILE (idcountry,mag,place,time,tsunami,lng,lat,depth,danger) VALUES" + cadena + ";"
 
-
+    
+    
+    
     return (cadena)
 
 
