@@ -53,7 +53,7 @@ connection.close()
 ##################################################################################################
 ##################################   Start of STREAMLIT CODE   ###################################
 
-st.markdown('<p class = "title_1">Test</p>', unsafe_allow_html=True)
+st.markdown('<p class = "title_1">Seismic Event Map By Danger</p>', unsafe_allow_html=True)
 st.markdown("***")
 
 
@@ -62,8 +62,8 @@ st.markdown("***")
 # ================================================================
 # 05 - Creating TEST Map
 # ================================================================
+st.markdown('<div class="block_intro"><p class="text">The map provides a clear overview of where and how severe the earthquakes have been. On the map, you will see circles representing each earthquake event. The size of the circles remains constant, but the color varies based on the danger level of the earthquake. This color distinction helps us quickly identify the severity of each event.<br><br> The legend for the colors is very intuitive, is as follows:<br><br>  - Green circles represent earthquakes with a danger level of 1.<br>  - Orange circles represent earthquakes with a danger level of 2.<br>  - Red circles represent earthquakes with a danger level of 3.</p></div>', unsafe_allow_html=True)
 st.markdown("***")
-st.markdown('<div class="block_intro"><p class="text">The second graph, titled "Seismic Magnitude-Time Distribution", depicts the relationship between seismic magnitude and time for three countries: Japan, Chile, and the United States. This metric helps identify temporal trends and changes in seismic magnitudes over the specified time period, providing valuable insights into the overall seismic activity and potential risks within each country or region.<br><br> Understanding the magnitude-time distribution is crucial for seismic forecasting, hazard assessment, and preparedness efforts. By visualizing the variations in seismic magnitudes over time, this graph provides a broader perspective on the temporal behavior of seismic activity in Japan, Chile, and the United States. It aids in identifying potential patterns, trends, or anomalies that can contribute to a better understanding of the seismic activity and inform risk mitigation strategies.<br><br> Please have in mind that the IDs for the countries are:<br> USA[1] - Japan[2] - Chile[3]</p></div>', unsafe_allow_html=True)
 
 
 # Changing numbers to the actual country name.
@@ -71,52 +71,34 @@ facts['idcountry'] = facts['idcountry'].replace(1, "USA")
 facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
-# facts['lon'] = facts['lng'].rename("lon")
 
-df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lng', 'lat', 'danger'])
-# df_map = pd.DataFrame(df, columns=['lat', 'lon'])
 
-# Set up Streamlit
-st.title("Earthquake Events Map")
-st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('<p class="title_3">Filter by Date:</p>', unsafe_allow_html=True)
 
-# Get the date range from the user
-min_date = pd.to_datetime(df['time']).min().date()
-max_date = pd.to_datetime(df['time']).max().date()
 
-selected_date = st.slider(
-    "  ",
-    min_value = min_date,
-    max_value = max_date,
-    format = "YYYY-MM-DD"
-)
-
-# Filter the data based on the selected date range
-filtered_df = df[
-    (df['time'].dt.date <= selected_date)
-]
+facts.rename(columns={'Ing': 'lon'}, inplace=True)
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
 
-# Define color labels based on danger level
-color_labels = {
-    1: 'green',
-    2: 'orange',
-    3: 'red'
-}
-
-# Add markers to the map
-for _, row in filtered_df.iterrows():
-    folium.Marker(
-        location=[row['lat'], row['lng']],
-        icon=folium.Icon(color=color_labels[row['danger']]),
-        popup=f"Time: {row['time']} | Danger: {row['danger']}"
+# Add circles to the map
+for _, row in facts.iterrows():
+    danger = row['danger']
+    color = 'green' if danger == 1 else 'orange' if danger == 2 else 'red'
+    
+    folium.CircleMarker(
+        location=[row['lat'], row['lon']],
+        radius=5,
+        color=color,
+        fill=True,
+        fill_color=color,
+        popup=f"Magnitude: {row['mag']} | Depth: {row['depth']} | Danger: {danger}"
     ).add_to(m)
 
 # Display the map using Streamlit
 folium_static(m)
+
+# # Display the map using Streamlit
+# st.markdown(m._repr_html_(), unsafe_allow_html=True)
 
 
 ###################################   End of STREAMLIT CODE   ####################################

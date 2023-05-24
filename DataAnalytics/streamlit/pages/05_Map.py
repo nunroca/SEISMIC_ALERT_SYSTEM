@@ -53,7 +53,7 @@ connection.close()
 ##################################################################################################
 ##################################   Start of STREAMLIT CODE   ###################################
 
-st.markdown('<p class = "title_1">Test</p>', unsafe_allow_html=True)
+st.markdown('<p class = "title_1">Seismic Event Map</p>', unsafe_allow_html=True)
 st.markdown("***")
 
 
@@ -62,8 +62,8 @@ st.markdown("***")
 # ================================================================
 # 05 - Creating TEST Map
 # ================================================================
+st.markdown('<div class="block_intro"><p class="text">This map aims to provide an overview of earthquake occurrences and their spatial distribution. <br><br> As you explore the map, you will notice circle markers representing different earthquake events. The size of the circles remains constant throughout the map, allowing us to focus on the relative locations and patterns of earthquakes.</p></div>', unsafe_allow_html=True)
 st.markdown("***")
-st.markdown('<div class="block_intro"><p class="text">The second graph, titled "Seismic Magnitude-Time Distribution", depicts the relationship between seismic magnitude and time for three countries: Japan, Chile, and the United States. This metric helps identify temporal trends and changes in seismic magnitudes over the specified time period, providing valuable insights into the overall seismic activity and potential risks within each country or region.<br><br> Understanding the magnitude-time distribution is crucial for seismic forecasting, hazard assessment, and preparedness efforts. By visualizing the variations in seismic magnitudes over time, this graph provides a broader perspective on the temporal behavior of seismic activity in Japan, Chile, and the United States. It aids in identifying potential patterns, trends, or anomalies that can contribute to a better understanding of the seismic activity and inform risk mitigation strategies.<br><br> Please have in mind that the IDs for the countries are:<br> USA[1] - Japan[2] - Chile[3]</p></div>', unsafe_allow_html=True)
 
 
 # Changing numbers to the actual country name.
@@ -71,14 +71,21 @@ facts['idcountry'] = facts['idcountry'].replace(1, "USA")
 facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
-# facts['lon'] = facts['lng'].rename("lon")
 
-df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lng', 'lat', 'danger'])
-df_map = pd.DataFrame(df, columns=['lat', 'lon'])
-st.map(df)
 
-# Set up Streamlit
-st.title("Earthquake Events Map")
+# Check the column names in the DataFrame
+print(facts.columns)
+
+
+facts.rename(columns={'Ing': 'lon'}, inplace=True)
+print(facts.info())
+
+
+df_map = pd.DataFrame(facts, columns=['lat', 'lon'])
+print(df_map.info())
+# print(df_map)
+st.map(df_map)
+
 
 
 ###################################   End of STREAMLIT CODE   ####################################
