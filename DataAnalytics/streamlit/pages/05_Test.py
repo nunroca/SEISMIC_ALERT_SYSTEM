@@ -94,7 +94,7 @@ selected_date = st.slider(
 
 # Filter the data based on the selected date range
 filtered_df = df[
-    (df['time'].dt.date >= selected_date)
+    (df['time'].dt.date <= selected_date)
 ]
 
 # Create the map
