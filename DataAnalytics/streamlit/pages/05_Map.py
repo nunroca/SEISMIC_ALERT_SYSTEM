@@ -86,7 +86,7 @@ m = folium.Map(location=[0, 0], zoom_start=2)
 for _, row in df.iterrows():
     folium.Marker(
         location=[row['lat'], row['lng']],
-        popup=f"Magnitude: {row['magnitude']} | Depth: {row['depth']}"
+        popup=f"Time: {row['time']} | Danger: {row['danger']}"
     ).add_to(m)
 
 # Display the map using Streamlit
