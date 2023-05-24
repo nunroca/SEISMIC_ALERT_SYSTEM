@@ -96,7 +96,10 @@ for _, row in facts.iterrows():
     ).add_to(m)
 
 # Display the map using Streamlit
-st.markdown(m._repr_html_(), unsafe_allow_html=True)
+folium_static(m)
+
+# # Display the map using Streamlit
+# st.markdown(m._repr_html_(), unsafe_allow_html=True)
 
 
 ###################################   End of STREAMLIT CODE   ####################################
