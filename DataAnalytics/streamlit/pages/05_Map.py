@@ -83,6 +83,8 @@ print(facts.info())
 
 
 df_map = pd.DataFrame(facts, columns=['lat', 'lon'])
+print(df_map.info())
+# print(df_map)
 st.map(df_map)
 
 
