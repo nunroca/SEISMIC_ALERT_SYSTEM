@@ -71,15 +71,20 @@ facts['idcountry'] = facts['idcountry'].replace(1, "USA")
 facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
-facts = facts.rename(columns={'lng': 'lon'})
-
-df = pd.DataFrame(facts, columns=['idcountry', 'time', 'lon', 'lat', 'danger'])
-df_map = pd.DataFrame(df, columns=['lat', 'lon'])
-print(df_map)
-st.map(df)
-
 # Set up Streamlit
 st.title("Earthquake Events Map")
+
+# Check the column names in the DataFrame
+print(facts.columns)
+
+
+facts.rename(columns={'Ing': 'lon'}, inplace=True)
+print(facts.info())
+
+
+df_map = pd.DataFrame(facts, columns=['lat', 'lon'])
+st.map(df_map)
+
 
 
 ###################################   End of STREAMLIT CODE   ####################################
