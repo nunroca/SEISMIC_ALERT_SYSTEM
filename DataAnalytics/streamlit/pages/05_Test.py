@@ -85,18 +85,16 @@ st.markdown('<p class="title_3">Filter by Date:</p>', unsafe_allow_html=True)
 min_date = pd.to_datetime(df['time']).min().date()
 max_date = pd.to_datetime(df['time']).max().date()
 
-selected_date_range = st.slider(
-    "Select Date Range",
+selected_date = st.slider(
+    "  ",
     min_value = min_date,
     max_value = max_date,
-    value = (min_date, max_date),
     format = "YYYY-MM-DD"
 )
 
 # Filter the data based on the selected date range
 filtered_df = df[
-    (df['time'].dt.date >= selected_date_range[0]) &
-    (df['time'].dt.date <= selected_date_range[1])
+    (df['time'].dt.date >= selected_date)
 ]
 
 # Create the map
