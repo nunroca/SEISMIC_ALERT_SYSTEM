@@ -42,3 +42,20 @@
 <p>The test was made using <b>seismicTest.csv</b> file which contains only dangerous events, the model must be able to label with 0 and 2 at least 90% of the total.</p>
 
 <p align=center><img src='DTS_img/seismicTestPic.png' width=1000 height=750></p>
+
+
+<p>The relation between model prediction label <b>'danger'</b> and the model variables are:</p>
+
+<ul>
+<li>idcountry: 0.55</li>
+<li>mag: 0.47</li>
+<li>tsunami: -0.0028</li>
+<li>depth: 0.4</li>
+</ul>
+
+<p align=center><img src='DTS_img/data_labeled_test.png' width=600 height=600></p>
+
+
+<h2>Conclusions</h2>
+
+<p>As a conclusion the variable tsunami has not been taken with the relevance we thought, it is a point to improve to have a better effectiveness. The model is able to distinguish between dangerous and non-dangerous events but with ambiguity in the middles. </p>
