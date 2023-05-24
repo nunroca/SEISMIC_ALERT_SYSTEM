@@ -73,17 +73,8 @@ facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
 
 
-
-# Use for FACTS2
-# facts.rename(columns={'Ing': 'lon'}, inplace=True)
-
-
 # Use for FACTS
 facts.rename(columns={'lng': 'lon'}, inplace=True)
-
-# Filter the data based on the selected year
-# min_year = pd.to_datetime(facts['time']).dt.year.min()
-# max_year = pd.to_datetime(facts['time']).dt.year.max()
 
 # Test
 min_year = int(facts['time'].dt.year.min())
