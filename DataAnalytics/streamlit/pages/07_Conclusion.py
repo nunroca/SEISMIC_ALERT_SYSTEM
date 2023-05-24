@@ -109,7 +109,7 @@ padding: 15px;
 border: 2px solid #92B8FF;
 border-radius: 5px;
 padding: 15px;
-height: 400px;
+height: 450px;
 }
 
 .block_kpis {

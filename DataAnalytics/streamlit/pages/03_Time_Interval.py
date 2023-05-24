@@ -61,9 +61,9 @@ st.markdown("***")
 # ================================================================
 # 03 - Creating Seismic Magnitude-Time Distribution graph
 # ================================================================
-st.markdown("***")
 st.markdown('<p class = "title_2">Time Interval Between Consecutive Seisms</p>', unsafe_allow_html=True)
 st.markdown('<div class="block_intro"><p class="text">The "Time Interval Between Consecutive Seisms" graph is a visualization that helps evaluate the temporal patterns of earthquake occurrence over a specific period, from 2010 until 2023. The graph displays the time intervals between consecutive seismic activities on the x-axis and the total count of seismic activities on the y-axis. Additionally, each country is represented by a distinct color in the graph, with Japan, Chile, and the United States being the specific countries highlighted.<br><br>This graph facilitates the analysis of temporal patterns in earthquake occurrence, allowing researchers and stakeholders to identify trends, clusters, or anomalies in seismic activity. It can aid in earthquake prediction, risk assessment, and the development of mitigation strategies to enhance preparedness and response measures.</p></div>', unsafe_allow_html=True)
+st.markdown("***")
 
 
 # Changing numbers to the actual country name.

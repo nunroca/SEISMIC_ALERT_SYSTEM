@@ -62,8 +62,8 @@ st.markdown("***")
 # ================================================================
 # 05 - Creating TEST Map
 # ================================================================
+st.markdown('<div class="block_intro"><p class="text">The map provides a clear overview of where and how severe the earthquakes have been. On the map, you will see circles representing each earthquake event. The size of the circles remains constant, but the color varies based on the danger level of the earthquake. This color distinction helps us quickly identify the severity of each event.<br><br> The legend for the colors is very intuitive, is as follows:<br><br>  - Green circles represent earthquakes with a danger level of 1.<br>  - Orange circles represent earthquakes with a danger level of 2.<br>  - Red circles represent earthquakes with a danger level of 3.</p></div>', unsafe_allow_html=True)
 st.markdown("***")
-st.markdown('<div class="block_intro"><p class="text">The map provides a clear overview of where and how severe the earthquakes have been. On the map, you will see circles representing each earthquake event. The size of the circles remains constant, but the color varies based on the danger level of the earthquake. This color distinction helps us quickly identify the severity of each event.<br><br> The legend for the colors is very intuitive, is as follows:<br><br> Green circles represent earthquakes with a danger level of 1.<br> Orange circles represent earthquakes with a danger level of 2.<br> Red circles represent earthquakes with a danger level of 3.</p></div>', unsafe_allow_html=True)
 
 
 # Changing numbers to the actual country name.

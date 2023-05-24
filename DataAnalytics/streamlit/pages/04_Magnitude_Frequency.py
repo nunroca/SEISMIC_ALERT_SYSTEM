@@ -58,9 +58,9 @@ st.markdown("***")
 # ================================================================
 # 04 - Creating Magnitude-Frequency Relationship graph
 # ================================================================
-st.markdown("***")
 st.markdown('<p class = "title_2">Magnitude-Frequency Relationship</p>', unsafe_allow_html=True)
 st.markdown('<div class="block_intro"><p class="text">The frequency axis in the "Magnitude-Frequency Relationship" scatter plot represents the number of occurrences or frequency of earthquakes for each magnitude value. In this context, the frequency indicates how many earthquakes have been recorded for a specific magnitude. For example, if a certain magnitude value has a high frequency, it means that earthquakes with that magnitude have occurred frequently or in larger numbers.<br><br>The frequency axis provides insights into the distribution of earthquakes across different magnitudes. It can help identify patterns or trends in earthquake occurrence, such as the presence of more frequent smaller-magnitude earthquakes or rare, larger-magnitude events. This information is valuable for understanding seismic activity and assessing the relative occurrence rates of different magnitudes.</p></div>', unsafe_allow_html=True)
+st.markdown("***")
 
 # Changing numbers to the actual country name.
 facts['idcountry'] = facts['idcountry'].replace(1, "USA")

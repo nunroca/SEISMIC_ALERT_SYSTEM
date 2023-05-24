@@ -95,6 +95,7 @@ st.markdown("***")
 # ================================================================
 st.markdown('<p class = "title_2">Sum of Seismic Activities per Country</p>', unsafe_allow_html=True)
 st.markdown('<div class="block_intro"><p class="text">The first graph, titled "Sum of Seismic Activities per Country", represents the cumulative seismic activity from 2010 to 2023 for three specific countries: Japan, Chile, and the United States. This metric helps identify areas with higher seismic activity by showcasing the total amount of seismic events recorded in each country over the specified time period.<br><br> On the y-axis, the graph displays the sum of seismic activities, which represents the cumulative number or intensity of earthquakes occurring in each country. Higher values on the y-axis indicate a greater overall seismic activity for a particular country, while lower values suggest relatively lower seismic activity.</p></div>', unsafe_allow_html=True)
+st.markdown("***")
 
 # Changing numbers to the actual country name.
 facts['idcountry'] = facts['idcountry'].replace(1, "USA")

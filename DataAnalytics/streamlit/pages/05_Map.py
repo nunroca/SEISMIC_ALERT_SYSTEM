@@ -62,8 +62,8 @@ st.markdown("***")
 # ================================================================
 # 05 - Creating TEST Map
 # ================================================================
-st.markdown("***")
 st.markdown('<div class="block_intro"><p class="text">This map aims to provide an overview of earthquake occurrences and their spatial distribution. <br><br> As you explore the map, you will notice circle markers representing different earthquake events. The size of the circles remains constant throughout the map, allowing us to focus on the relative locations and patterns of earthquakes.</p></div>', unsafe_allow_html=True)
+st.markdown("***")
 
 
 # Changing numbers to the actual country name.
@@ -71,8 +71,7 @@ facts['idcountry'] = facts['idcountry'].replace(1, "USA")
 facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
 facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
-# Set up Streamlit
-st.title("Earthquake Events Map")
+
 
 # Check the column names in the DataFrame
 print(facts.columns)
