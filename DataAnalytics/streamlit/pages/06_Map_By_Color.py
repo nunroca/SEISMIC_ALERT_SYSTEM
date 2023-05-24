@@ -35,8 +35,8 @@ connection = mysql.connector.connect(
 )
 
 # SELECTING the table "FACTS" and giving the info to a pandas data frame
-query = ("SELECT * FROM FACTS2;")
-# query = ("SELECT * FROM FACTS;")
+# query = ("SELECT * FROM FACTS2;")
+query = ("SELECT * FROM FACTS;")
 facts = pd.read_sql(query, connection)
 
 # Closing the connection with the database
@@ -74,8 +74,12 @@ facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
 
 
+# Use for FACTS2
+# facts.rename(columns={'Ing': 'lon'}, inplace=True)
 
-facts.rename(columns={'Ing': 'lon'}, inplace=True)
+
+# Use for FACTS
+facts.rename(columns={'lng': 'lon'}, inplace=True)
 
 # Create the map
 m = folium.Map(location=[0, 0], zoom_start=2)
