@@ -82,8 +82,12 @@ facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 facts.rename(columns={'lng': 'lon'}, inplace=True)
 
 # Filter the data based on the selected year
-min_year = pd.to_datetime(facts['time']).dt.year.min()
-max_year = pd.to_datetime(facts['time']).dt.year.max()
+# min_year = pd.to_datetime(facts['time']).dt.year.min()
+# max_year = pd.to_datetime(facts['time']).dt.year.max()
+
+# Test
+min_year = int(facts['time'].dt.year.min())
+max_year = int(facts['time'].dt.year.max())
 
 selected_year = st.slider("Select Year:", min_value=min_year, max_value=max_year)
 
