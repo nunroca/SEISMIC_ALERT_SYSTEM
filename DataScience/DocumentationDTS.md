@@ -39,7 +39,7 @@
 
 <h2>Testing performance</h2>
 
-<p>The test was made using <b>seismicTest.csv</b> file which contains only dangerous events, the model must be able to label with 0 and 2 at least 90% of the total.</p>
+<p>The test was made using <b>seismicTest.csv</b> file which contains only dangerous events, the model must be able to group the mayority of the events in the clusters 8,6,2,0,7 with the cluster 8 as the most dangerous, every event outside this sets of clusters will be taken as errors.</p>
 
 <p align=center><img src='DTS_img/seismicTestPic.png' width=800 height=400></p>
 
