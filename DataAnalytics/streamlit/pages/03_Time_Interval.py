@@ -37,22 +37,7 @@ connection = mysql.connector.connect(
 # SELECTING the table "FACTS" and giving the info to a pandas data frame
 query = ("SELECT * FROM FACTS;")
 facts = pd.read_sql(query, connection)
-# print(historical_chile.head(2))
 
-# SELECTING the table "JAPAN" and giving the info to a pandas data frame
-query = ("SELECT * FROM JAPAN;")
-japan = pd.read_sql(query, connection)
-# print(historical_japan.head(2))
-
-# SELECTING the table "USA" and giving the info to a pandas data frame
-query = ("SELECT * FROM USA;")
-usa = pd.read_sql(query, connection)
-# print(historical_usa.head(2))
-
-# SELECTING the table "CHILE" and giving the info to a pandas data frame
-query = ("SELECT * FROM CHILE;")
-chile = pd.read_sql(query, connection)
-# print(historical_usa.head(2))
 
 # Closing the connection with the database
 connection.close()
@@ -76,10 +61,15 @@ st.markdown("***")
 # ================================================================
 # 03 - Creating Seismic Magnitude-Time Distribution graph
 # ================================================================
-st.markdown("***")
 st.markdown('<p class = "title_2">Time Interval Between Consecutive Seisms</p>', unsafe_allow_html=True)
-st.markdown('<div class="block_intro"><p class="text">The "Time Interval Between Consecutive Seisms" graph is a visualization that helps evaluate the temporal patterns of earthquake occurrence over a specific period, from 2010 until 2023. The graph displays the time intervals between consecutive seismic activities on the x-axis and the total count of seismic activities on the y-axis. Additionally, each country is represented by a distinct color in the graph, with Japan, Chile, and the United States being the specific countries highlighted.<br><br>This graph facilitates the analysis of temporal patterns in earthquake occurrence, allowing researchers and stakeholders to identify trends, clusters, or anomalies in seismic activity. It can aid in earthquake prediction, risk assessment, and the development of mitigation strategies to enhance preparedness and response measures.<br><br> Please have in mind that the IDs for the countries are:<br> USA[1] - Japan[2] - Chile[3]</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="block_intro"><p class="text">The "Time Interval Between Consecutive Seisms" graph is a visualization that helps evaluate the temporal patterns of earthquake occurrence over a specific period, from 2010 until 2023. The graph displays the time intervals between consecutive seismic activities on the x-axis and the total count of seismic activities on the y-axis. Additionally, each country is represented by a distinct color in the graph, with Japan, Chile, and the United States being the specific countries highlighted.<br><br>This graph facilitates the analysis of temporal patterns in earthquake occurrence, allowing researchers and stakeholders to identify trends, clusters, or anomalies in seismic activity. It can aid in earthquake prediction, risk assessment, and the development of mitigation strategies to enhance preparedness and response measures.</p></div>', unsafe_allow_html=True)
+st.markdown("***")
 
+
+# Changing numbers to the actual country name.
+facts['idcountry'] = facts['idcountry'].replace(1, "USA")
+facts['idcountry'] = facts['idcountry'].replace(2, "Japan")
+facts['idcountry'] = facts['idcountry'].replace(3, "Chile")
 
 # Calculate time intervals between consecutive earthquakes
 facts['time_between'] = facts['time'].diff()
@@ -88,11 +78,10 @@ facts['time_between'] = facts['time'].diff()
 unique_countries_03 = facts['idcountry'].unique()
 
 
-
 # Create multiselect filter for countries
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('<p class = "title_3">Filter by Country:</p>', unsafe_allow_html=True)
-selected_countries_03 = st.multiselect("  ", unique_countries_03, default = [2])
+selected_countries_03 = st.multiselect("  ", unique_countries_03, default = ["Japan"])
 
 # Filter data based on selected countries
 filtered_data = facts[facts['idcountry'].isin(selected_countries_03)]

@@ -55,10 +55,12 @@
 
 <h2>KPIs</h2>
 <ul>
-<li>KPI: Percentage of Effective Coverage --> Objective: Expand the coverage of alerts.</li>
-<li>KPI: Average Reaction Time --> Objective: Improve the time and type of reaction.</li>
-<li>KPI: Average Users per Social Media Platform --> Objective: Ensure accessibility to the alert system.</li>
-<li>KPI: Accuracy Ratio of Current Alerts --> Objective: Increase accuracy and classification quality.</li>
+  <li>KPI: Alert Response Time:
+    <p>This measures the time it takes for the alert system to notify the people after an earthquake event occurs. This KPI helps assess the speed and efficiency of your alert.</p></li>
+  <li>KPI: Alert Reach:
+    <p>Assess the percentage of the population reached by the alerts. This KPI provides insights into the coverage and penetration of the alert system and helps identify areas or demographic groups that may need additional attention.</p></li>
+  <li>KPI: Impact Assesment:
+    <p>Assess the impact of earthquakes by analyzing their relationships with secondary events, such as tsunamis and volcanic hazards. This KPI can provide insights into the potential consequences. Increase accuracy and clasification quality.</p></li>
 </ul>
 <p>All KPIs will be measured annually.</p>
 
@@ -67,6 +69,10 @@
 <p><li>Data Engineering: Data will be extracted from different sources, transformed, and stored in the Amazon AWS cloud.</p>
 <p><li>Data Analytics: The stored data will be used to show the current situation with an interactive dashboard.</p>
 <p><li>Data science: A seismic classification model will be created using machine learning.</p>
+
+<h2>WorkFlow</h2>
+<p align=center><img src='img/Logos/WorkFlow.png' width=1000></p>
+
 
 <p>Go back to <a href="#sistema">top</a></p>
 
@@ -109,8 +115,8 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
 
 <h2>Visualization</h2>
-<p>Explain a little about Visualization</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+<p>Please take a look at our <a href="https://jpip8-sistema-de-aler-dataanalyticsstreamlitintroduction-d6ak17.streamlit.app/">StreamLit </a> dashboard.</p>
+<p>Leveraging the powerful capabilities of streamlit as our core visualization tool, we have successfully generated a series of comprehensive and insightful graphs that shed light on the intricate nature of seismic activity in Japan, Chile, and the United States. These meticulously crafted visual representations serve as pivotal instruments in unraveling the complex dynamics of seismic movements, enabling us to discern patterns, trends, and potential risks with enhanced clarity. Our diligent efforts in harnessing the potential of streamlit have unlocked a wealth of previously inaccessible data, empowering us to conduct a thorough analysis of seismic phenomena. We cordially invite you to embark on an immersive journey through our detailed documentation, where we delve into the intricacies of our visualization process and its profound impact on seismic analysis.</p>
 
 <p>Go back to <a href="#sistema">top</a></p>
 
@@ -122,11 +128,11 @@
 
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+<p>Quantum Analytics utilizes data analysis and machine learning models to classify and detect patterns in seismic movements in the United States, Japan, and Chile. Our focus on validating the accuracy of the model ensures reliable results to inform citizens about potential seismic hazards. Through data visualization and effective communication, we contribute to public safety by reaching a wide audience. Our graphs showcase the sum of seismic activities, the magnitude-time distribution, and the intervals between consecutive seismic events, providing valuable insights to understand seismic activity and assist in risk assessment and preparedness efforts.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+<p>The graphs presented in our interactive <a href="https://jpip8-sistema-de-aler-dataanalyticsstreamlitintroduction-d6ak17.streamlit.app/">StreamLit </a> dashboard analysis are key tools for understanding seismic activity in Japan, Chile, and the United States. The "Sum of Seismic Activities per Country" graph allows for the identification of areas with higher seismic activity and assesses the intensity of earthquakes recorded in each country over time. The "Seismic Magnitude-Time Distribution" reveals temporal patterns and trends in seismic magnitudes, providing valuable information for risk assessment and planning of mitigation measures. The "Time Interval Between Consecutive Seisms" provides insights into the temporal patterns of earthquake occurrence, helping to understand clustering and gaps between seismic events. Lastly, the "Magnitude-Frequency Relationship" reveals the distribution of earthquakes according to their magnitudes, allowing for the identification of the frequency of events of different sizes. These combined graphs provide a comprehensive view of seismic activity, supporting informed decision-making and the implementation of appropriate safety measures.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+
 
 <p>Go back to <a href="#sistema">top</a></p>
 
@@ -153,7 +159,7 @@
 <h3>Data Analytics</h3>
 <p><img src='img/Logos/seabornLogo.svg' width=30 height=20> &nbsp Seaborn</p>
 <p><img src='img/Logos/matplotlibLogo.png' width=50 height=20> &nbsp Matplotlib</p>
-<p><img src='img/Logos/powerbiLogo.jpg' width=60 height=20> &nbsp PowerBI</p>
+<p><img src='img/Logos/logo_streamlit.png' width=60 height=20> &nbsp Streamlit</p>
 
 <h3>Data Science</h3>
 <p><img src='img/Logos/pythonLogo.png' width=20 height=20> &nbsp Python</p>

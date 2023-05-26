@@ -130,3 +130,5 @@ We face the need to be able to communicate and alert the population of a region 
 <p>Map of countries involved.</p>
 
 <p align=center><img src='img/Logos/alcance.jpeg' width=500></p>
+
+<p>quantum analytics</p>

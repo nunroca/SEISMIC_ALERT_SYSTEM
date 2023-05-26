@@ -1,0 +1,12 @@
+fqdn==1.5.1
+isoduration==20.11.0
+jsonpointer==2.3
+jupyter==1.0.0
+openai==0.27.7
+pandas==2.0.1
+pip-chill==1.0.3
+pytelegrambotapi==4.12.0
+python-telegram-bot==20.3
+schedule==1.2.0
+uri-template==1.2.0
+webcolors==1.13
