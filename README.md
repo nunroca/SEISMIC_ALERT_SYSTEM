@@ -103,16 +103,15 @@
 
 
 <h2>ETL</h2>
-<p>Explain a little about ETL</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+
+<p>Data extraction is carried out from different information sources on the web, some data was extracted from an API in JASON format, in other cases a WEB SCRAPING of web pages was carried out, which will be processed directly as required by the MACHINE LEARNING Model and for a more detailed analysis.</p>
 
 <h2>EDA</h2>
-<p>Explain a little about EDA</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+ 
+<p>In this stage of the project, the columns are established and the labels are adapted with the necessary data required by the classification model. The data to be reviewed by the data analyst is also considered. Functions of data overwriting and upload to the RDS server are developed.</p>
 
 <h2>Machine Learning Model</h2>
-<p>Explain a little about the Machine Learning Model</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+<p>For the classification model, we choose the model called 'Kmeans', it is an unsupervised model based on clustering and. That means the data will be grouped based on feature relationships, similarities, and does not need correct labeled data to train it.</p>
 
 <h2>Visualization</h2>
 <p>Please take a look at our <a href="https://jpip8-sistema-de-aler-dataanalyticsstreamlitintroduction-d6ak17.streamlit.app/">StreamLit </a> dashboard.</p>
