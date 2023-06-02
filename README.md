@@ -107,7 +107,7 @@
 <p>Data extraction is carried out from different information sources on the web, some data was extracted from an API in JASON format, in other cases a WEB SCRAPING of web pages was carried out, which will be processed directly as required by the MACHINE LEARNING Model and for a more detailed analysis.</p>
 
 <h2>EDA</h2>
-<p>Explain a little about EDA</p>
+ 
 <p>In this stage of the project, the columns are established and the labels are adapted with the necessary data required by the classification model. The data to be reviewed by the data analyst is also considered. Functions of data overwriting and upload to the RDS server are developed.</p>
 
 <h2>Machine Learning Model</h2>
