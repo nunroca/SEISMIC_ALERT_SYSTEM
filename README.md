@@ -104,7 +104,7 @@
 
 <h2>ETL</h2>
 <p>Explain a little about ETL</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt feugiat nulla in luctus. Morbi accumsan dapibus justo, vel facilisis enim fermentum vitae. Cras dignissim bibendum metus ac fringilla. Pellentesque mollis magna viverra viverra faucibus. Pellentesque dictum sodales sapien sit amet maximus. Aliquam metus neque, vehicula at eleifend in, rutrum id turpis. Aenean ac odio efficitur sem lobortis molestie. Etiam mattis ac odio vel dignissim. Sed aliquet ante non erat mollis, eu ornare leo volutpat. Proin ac risus id risus egestas malesuada nec nec lacus.</p>
+<p>Data extraction is carried out from different information sources on the web, some data was extracted from an API in JASON format, in other cases a WEB SCRAPING of web pages was carried out, which will be processed directly as required by the MACHINE LEARNING Model and for a more detailed analysis.</p>
 
 <h2>EDA</h2>
 <p>Explain a little about EDA</p>
